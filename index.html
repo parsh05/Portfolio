@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f5e790dd99.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="header-nav">
+                <a href="#header">
+                    <div class="logo">
+                        <h1>
+                            <span>P</span>arshant
+                        </h1>
+                    </div>
+                </a>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Developer</p>
+                <h1>Hi, I'm <span>Parshant <br> Kumar Singh</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------about----------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pcboi2.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I Am Currently Learning Full Stack Web Development. I Am Passionate About Solving Real-World Problems
+                    And Actively Looking For Opportunities In The Field Of Web Development And Software Engineering.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('coding-profile')">Coding Profile</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Developing Web Application <br><br> </li>
+                            <li><span>Backend Development</span><br>Developing Web Backend Application <br><br></li>
+                            <li><span>Software Engineering</span><br>Excellent Problem Solving <br><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="coding-profile">
+                        <ul>
+                            <li><span> Geeks for Geeks </span><div style="display: inline-block;">
+                                <a href="https://www.geeksforgeeks.org/user/parshanv8if/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                                <br>
+                                Solved 250+ DSA Questions 
+                                
+                                <br><br>
+                            </li>
+                            <li>
+                                <span> LeetCode </span><div style="display: inline-block;">
+                                <a href="https://leetcode.com/u/singhprashantkumar210/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                                <br>
+                                Solved 120+ DSA Questions
+                                
+                                    <br><br>
+                            </li>
+                            <li><span> Coding Ninja </span>
+                                <div style="display: inline-block;">
+                                    <a
+                                        href="https://www.naukri.com/code360/profile/8eaf6e82-ca60-45a0-a2a2-f2a8e65dc072?utm_source=whatsapp&utm_medium=codestudio-social&utm_campaign=8eaf6e82-ca60-45a0-a2a2-f2a8e65dc072"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                                <br>
+                                Solved 160+ easy Java Questions
+                                
+                                <br><br>
+                            </li>
+                            <li></i> <span> GitHub </span><div style="display: inline-block;">
+                                <a href="https://github.com/parsh05"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div><br>
+                                
+                                <br><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>Developing Web Application &nbsp <b>CGPA : 8.20</b></li>
+                            <li><span>Codsoft</span><br>Internship : Developed web project</li>
+                            <li><span>Software Engineering</span><br>Excellent Problem Solving</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Computer Science and Engineering, National Institute of Technology Arunachal Pradesh <br> <b style="font-weight: 700;">CGPA :8.20</b>
+                              <br><br>
+                            </li>
+                            <li><span>12th</span><br>I.Sc., Anugraha Narayana College, Patna,Bihar <br><b> Percentage: 84.4%</b>
+                            <br><br>
+                            </li>
+                            <li><span>10th</span><br>C.C.S. Sr. Secondary School, Gurugram, Haryana <br><b> Percentage: 88.4%</b>
+                            <br><br>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--     /* --------------------Services-------------------------------------------- */-->
+    <div class="services" id="services"> 
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FRONTEND DEVELOPMENT</h2>
+                    <p><b>1. </b> Has a solid command over HTML,CSS and Javascript, <br>
+                    Developing Responsive Website.
+                    <br><br>
+                    <b>2. </b>Knows basic of React
+                    <br><br>
+                    </p>
+                    <a href="#">learn more</a>
+                    <br>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>BACKEND DEVELOPMENT</h2>
+                    <p> <b>1. </b>Holds a solid command over JDBC, Servlets and JSP. <br> <br>
+                        <b>2. </b> Knows MySql Database  </p>
+                    <a href="#">learn more</a>
+                    <br>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>DATA STRUCTURES & ALGORITHM</h2>
+                    <p><b>1. </b>Excellent Problem Solving Skills. </p>
+                    <b>2. </b> Languages : Java, C/C++;
+                    <a href="#">learn more</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------Portfolio------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img style="background-size: contain;" src="https://assets.techrepublic.com/uploads/2021/08/search-engine.jpg" >
+                    <div class="layer">
+                        <h3>SEARCH ENGINE</h3>
+                        <p>Developed a basic search-engine using JDBC, Java Servlets and JSP</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #f11e5d;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2209746085/display_1500/stock-vector-template-or-mockup-as-for-product-placement-on-smartphone-online-shopping-application-many-2209746085.jpg">
+                    <div class="layer">
+                        <h3>SHOPPING WEBSITE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatibus.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #f11e5d;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>SHOPPING WEBSITE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatibus.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #f11e5d;"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a class="btn" href="#">See more</a>
+        </div>
+    </div>
+    <!-- ------------------------------Contact --------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>parshantkumarsingh08@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9485258936</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/parshant-kumar-singh-087429263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="color: #f6fafe;"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter" style="color: #0e94fb;"></i></a>
+                        <a href="http://discordapp.com/users/1147609231596474539"><i class="fa-brands fa-discord" style="color: #B197FC;"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright <i class="fa-regular fa-copyright fa-2xs"></i>  Parshant. Made with <i class="fa-solid fa-heart"></i> 
+            </p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+   <!--  <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+    </form> -->
+    
+    <!-- -----------------------------------google sheet------------------------------------------ -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9HV4j6knowbV3mYXeW-aqVBZyJQgRnTByAB6uz7D6GmM9pdZl36MkmONaTS0r-OnewQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response =>{ 
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML=""
+                    },2000)
+                    form.reset()
+                    
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
