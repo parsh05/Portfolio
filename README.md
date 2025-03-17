@@ -1,3 +1,3 @@
 # Portfolio
 
-https://github.com/parsh05
+https://parsh05.github.io/Portfolio/
